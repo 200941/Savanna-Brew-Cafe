@@ -1,0 +1,165 @@
+/* SAVANNA BREW CAFE WEBSITE */
+
+:root {
+    --brown: #6F4E37;
+    --cream: #F5E9DA;
+    --orange: #D9822B;
+    --dark: #2B1B12;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--brown);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--dark);
+    padding: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--orange);
+}
+
+.hero {
+    background-color: var(--brown);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--dark);
+}
+
+.welcome {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome h2 {
+    color: var(--brown);
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.welcome p {
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+* ABOUT PAGE LAYOUT */
+.about-story {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px; /* Makes the corners smooth and round */
+}
+
+/* BLOCKQUOTE STYLING */
+blockquote {
+  border-left: 4px solid var(--accent-color, #D9822B);
+  padding-left: 15px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* VALUES CARDS */
+.values-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.value-card {
+  background-color: #F5E9DA;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* MOBILE PHONE TRICK: Stack everything top-to-bottom on smaller screens */
+@media (max-width: 768px) {
+  .about-story, .values-list {
+    flex-direction: column;
+  }
+}

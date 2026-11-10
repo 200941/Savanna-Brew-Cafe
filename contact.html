@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Savanna Brew Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Savanna Brew Cafe</h1>
+            <p class="tagline">Brewed in Kenya. Served with love.</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Stop by for a cup or send us a message below.</p>
+            
+            <div style="margin: 20px 0; text-align: left; background: #f9f6f0; padding: 20px; border-radius: 6px;">
+                <p><strong>📍 Location:</strong> Nairobi, Kenya</p>
+                <p><strong>📞 Phone:</strong> +254 700 000 000</p>
+                <p><strong>✉️ Email:</strong> hello@savannabrew.co.ke</p>
+                <p><strong>🕒 Hours:</strong> Mon - Sat: 7:00 AM - 8:00 PM | Sun: 8:00 AM - 6:00 PM</p>
+            </div>
+
+            <form style="display: flex; flex-direction: column; gap: 12px; text-align: left; margin-top: 20px;">
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required>
+
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" id="email" name="email" placeholder="Your Email" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required>
+
+                <label for="message"><strong>Message:</strong></label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we help you?" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;" required></textarea>
+
+                <button type="submit" class="btn" style="border: none; cursor: pointer; align-self: start;">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Savanna Brew Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
